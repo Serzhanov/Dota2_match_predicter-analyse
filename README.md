@@ -21,7 +21,7 @@ So we are grouping that information by 5 rows,and obtaining the mean value of ea
 There is a lot of columns in my opinion let's check the correlation for each column with the result  of the match which is radiant_win.
 
 
-![jpg](correlation.jpg)
+![jpg](correlation_d2.jpg)
 
 Then ,we drop useless columns like ['start_time','duration','game_mode','positive_votes','negative_votes','cluster'] because this columns dont influence on game result.
 
@@ -30,14 +30,16 @@ Then ,we drop useless columns like ['start_time','duration','game_mode','positiv
 # Chosing the model
 Before choosing the right model ,we should check the important features of data like (xp_radiant,gold_radiant)
 Let's see the scatter plot with  linear regression.
-![jpg](scatter.jpg)
+
+![jpg](scatter_xp.jpg)
+
 Now that we have seen that there is some relationship between the total experience and gold and a team's win, we want to dive deeper into creating a model that puts together our features to as accurately as possible predict the outcome of a match and to identify which features have the highest impact on the match outcome.
 Logistic Regression will be the least computationally costly model.
 
 # Result of model
 
 Let's plot the confusion matrix of our result and AOC to see the performance of our model.
-![jpg](resultd2.jpg)
+![jpg](resultd2model.jpg)
 
 # Conclusion
 
